@@ -45,6 +45,9 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="68"/>
                                     <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dap-Ih-5eh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr2-sq-IN1">
                                 <rect key="frame" x="184.66666666666666" y="250" width="61" height="33"/>
@@ -66,6 +69,9 @@
                             <constraint firstItem="fr2-sq-IN1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pwh-o2-iaG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorName" destination="fr2-sq-IN1" id="JSh-pG-rSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
