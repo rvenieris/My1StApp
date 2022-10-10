@@ -33,14 +33,17 @@ class ViewController: UIViewController {
         for item in colors {
             colorNames.append(item.key)
         }
+        
+        changeColor(to: (0..<colors.count).randomElement()!)
     }
 
-    @IBAction func changeColor(_ sender: UIButton) {
-        self.view.backgroundColor = colors[colorNames[index]]
+    @IBAction func changeColor(_ sender: UIButton) {      index = (index+1)%colors.count
+        changeColor(to: index)
+    }
+    
+    func changeColor(to index:Int) {
         colorName.text = colorNames[index]
-        
-        index += 1
-        index = index%colors.count
+        self.view.backgroundColor = colors[colorNames[index]]
     }
     
 }
