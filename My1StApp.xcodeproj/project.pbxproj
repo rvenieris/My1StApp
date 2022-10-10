@@ -16,6 +16,7 @@
 		8C102A3528F3769300167AF5 /* My1StAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C102A3428F3769300167AF5 /* My1StAppTests.swift */; };
 		8C102A3F28F3769300167AF5 /* My1StAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C102A3E28F3769300167AF5 /* My1StAppUITests.swift */; };
 		8C102A4128F3769300167AF5 /* My1StAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C102A4028F3769300167AF5 /* My1StAppUITestsLaunchTests.swift */; };
+		8C102A4E28F3AE8E00167AF5 /* MyCustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C102A4D28F3AE8E00167AF5 /* MyCustomUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8C102A3A28F3769300167AF5 /* My1StAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = My1StAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C102A3E28F3769300167AF5 /* My1StAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My1StAppUITests.swift; sourceTree = "<group>"; };
 		8C102A4028F3769300167AF5 /* My1StAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My1StAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C102A4D28F3AE8E00167AF5 /* MyCustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				8C102A1D28F3769000167AF5 /* AppDelegate.swift */,
 				8C102A1F28F3769000167AF5 /* SceneDelegate.swift */,
 				8C102A2128F3769000167AF5 /* ViewController.swift */,
+				8C102A4D28F3AE8E00167AF5 /* MyCustomUIView.swift */,
 				8C102A2328F3769000167AF5 /* Main.storyboard */,
 				8C102A2628F3769200167AF5 /* Assets.xcassets */,
 				8C102A2828F3769200167AF5 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C102A2228F3769000167AF5 /* ViewController.swift in Sources */,
+				8C102A4E28F3AE8E00167AF5 /* MyCustomUIView.swift in Sources */,
 				8C102A1E28F3769000167AF5 /* AppDelegate.swift in Sources */,
 				8C102A2028F3769000167AF5 /* SceneDelegate.swift in Sources */,
 			);

@@ -27,7 +27,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorName: UILabel!
     
+
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        print(type(of: self), #function)
+    }
+    
+    required init?(coder: NSCoder) {
+        print(type(of: self), #function)
+        super.init(coder: coder)
+        // fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        print(type(of: self), #function)
+        super.loadView()
+        
+        let newView = MyCustomUIView(frame: self.view.frame)
+        
+        view.subviews.forEach {subView in
+            subView.removeFromSuperview()
+            newView.addSubview(subView)
+        }
+        self.view = newView
+
+    }
+
     override func viewDidLoad() {
+        print(type(of: self), #function)
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         for item in colors {
@@ -37,7 +64,25 @@ class ViewController: UIViewController {
         changeColor(to: (0..<colors.count).randomElement()!)
     }
 
-    @IBAction func changeColor(_ sender: UIButton) {      index = (index+1)%colors.count
+    override func viewWillAppear(_ animated: Bool) {
+        print(type(of: self), #function)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print(type(of: self), #function)
+    }
+    
+    
+    deinit {
+        print(type(of: self), #function)
+    }
+    
+    
+    
+    
+    @IBAction func changeColor(_ sender: UIButton) {
+        print(type(of: self), #function)
+        index = (index+1)%colors.count
         changeColor(to: index)
     }
     
